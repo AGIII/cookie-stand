@@ -1,0 +1,71 @@
+* {
+  text-align: center;
+  background-color: gray;
+}
+
+header {
+  font-size: 64px;
+  font-family: tangerine;
+  color: purple;
+}
+
+img {
+  width: 400px;
+}
+
+h1 {
+  font-family:;
+  color: purple;
+}
+
+h2 {
+  font-family:;
+  color: purple;
+}
+
+h3 {
+  font-family:;
+  color: purple;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+.data {
+  font-family: Helvetica;
+  color: green;
+}
+
+.text {
+  font-family: Georgia;
+  color:blue;
+}
+
+tr {
+  height: 150px;
+}
+
+td {
+  width: 150px;
+  color: white;
+  background-color: #AA3939;
+}
+
+td #1 {
+ background-color: #AA3939;
+}
+
+.2 {
+ background-color: #AA6C39;
+}
+
+#3 {
+ background-color: #226666;
+}
+
+#4 {
+ background-color: #2E882E;
+}

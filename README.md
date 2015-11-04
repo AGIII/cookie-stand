@@ -1,2 +1,1 @@
-# cookie-stand
-salmon cookie stand
+Salmon Cookie Stand Project - Week 2
