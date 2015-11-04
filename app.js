@@ -1,44 +1,81 @@
+var hours = ['10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm'
+
 var pikePlaceMarket = {
-  minhourcust: 17,
-  maxhourcust: 88,
-  avecookiecust 5.2,
+  minHourCust: 17,
+  minHourCust: 88,
+  aveCookieCust 5.2,
   hourTotals: [],
   dailyTotal: 0,
+
   randomCustHour: function() {
-    return Math.floor(Math.random() * (maxhourcust - minhourcust + 1)
-      + minhourcust);
-  }
+    return Math.floor(Math.random() * (this.minHourCust - this.minHourCust + 1)
+      + this.minHourCust);
+  },
 
   cookiesPerHour: function() {
-    return randomCustHour * avecookiecust
-  }
+    for (var i = 0; i < hours.length, i++) {
+    var cookiesPerHour = Math.floor(this.aveCookieCust * this.randomCustHour());
+    console.log('The number of cookies purchased for each hour is ' + cookiesPerHour);
+    this.hourTotals.push(cookiesPerHour);
+    this.dailyTotal += cookiesPerHour;
+    console.log('The sum of these hourly totals is ' + this.dailyTotal);
+  },
 
+  makeList: function() {
+    this.cookiesPerHour();
+
+    for (var i = 0; i < hours.length; i++) {
+      var list = document.createElement('list');
+      list.textContent = hours[i] + ': ' + this.hourTotals[i];
+      pikeUl.appendChild(list);
+    }
+    var list = document.createElement('list');
+    list.textContent = 'Daily Total: ' + this.dailyTotal;
+    pikeUl.appendChild(list);
+
+  }
 };
 
 var seaTacAir = {
-  minhourcust: 6,
-  maxhourcust: 44,
-  avecookiecust 1.2,
+  minHourCust: 6,
+  minHourCust: 44,
+  aveCookieCust 1.2,
+  hourTotals: [],
+  dailyTotal: 0,
 
 };
 
 var southMall = {
-  minhourcust: 11,
-  maxhourcust: 38,
-  avecookiecust 1.9,
+  minHourCust: 11,
+  minHourCust: 38,
+  aveCookieCust 1.9,
+  hourTotals: [],
+  dailyTotal: 0,
 
 };
 
 var bellevueSquare = {
-  minhourcust: 20,
-  maxhourcust: 48,
-  avecookiecust 3.3,
+  minHourCust: 20,
+  minHourCust: 48,
+  aveCookieCust 3.3,
+  hourTotals: [],
+  dailyTotal: 0,
 
 };
 
 var alki = {
-  minhourcust: 3,
-  maxhourcust: 24,
-  avecookiecust 2.6,
+  minHourCust: 3,
+  minHourCust: 24,
+  aveCookieCust 2.6,
+  hourTotals: [],
+  dailyTotal: 0,
 
 };
+
+pikePlaceMarket.makeList()
+seaTacAir.makeList()
+southMall.makeList()
+bellevueSquare.makeList()
+alki.makeList()
+
+
