@@ -72,10 +72,14 @@ var alki = {
 
 };
 
+var pikeUl = getElementById('pike')
+var seaTacUl = getElementById('seaTac')
+var southCenterUl = getElementById('southCenter')
+var bellevueSquareUl = getElementById('bellevueSquare')
+var alkiUL = getElementById('alki')
+
 pikePlaceMarket.makeList()
 seaTacAir.makeList()
 southMall.makeList()
 bellevueSquare.makeList()
 alki.makeList()
-
-
