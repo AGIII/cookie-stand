@@ -1,9 +1,12 @@
 * {
   text-align: center;
+  background-color: gray;
 }
 
 header {
   font-size: 64px;
+  font-family: tangerine;
+  color: purple;
 }
 
 img {
@@ -11,15 +14,18 @@ img {
 }
 
 h1 {
-
+  font-family:;
+  color: purple;
 }
 
 h2 {
-
+  font-family:;
+  color: purple;
 }
 
 h3 {
-
+  font-family:;
+  color: purple;
 }
 
 table {
@@ -28,12 +34,21 @@ table {
   border-collapse: collapse;
 }
 
+.data {
+  font-family: Helvetica;
+  color: green;
+}
+
+.text {
+  font-family: Georgia;
+  color:blue;
+}
+
 tr {
   height: 150px;
 }
 
 td {
-  border: 1px solid black;
   width: 150px;
   color: white;
   background-color: #AA3939;
