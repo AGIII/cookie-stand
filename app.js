@@ -1,5 +1,7 @@
 var hours = ['10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm']
 
+var tbl = document.createElement('table');
+
 function CookieStand (location, minHourCust, maxHourCust, aveCookieCust) {
   this.location = location;
   this.minHourCust = minHourCust;
@@ -25,33 +27,37 @@ function CookieStand (location, minHourCust, maxHourCust, aveCookieCust) {
 
   this.makeList = function() {
     this.cookiesPerHour();
+    console.log('The hourly totals are: ' + this.hourTotals);
+    console.log('The daily total is: ' + this.dailyTotal);
     var heading = document.createElement('tr');
+    console.log(heading);
     var blank = document.createElement('td');
     blank.textContent = '';
-    heading.appendChild(blank);
 
+    var headerRow = document.createElement('thead');
+    headerRow.appendChild(blank);
 
-    for (var i = 0; i < hours.length; i++) {
-      var storeHours = document.createElement('td');
-      storeHours.textContent = hours[i];
-      heading.appendChild(storeHours);
+    for (i = 0; i < hours.length; i++) {
+      var td = document.createElement('td');
+      td.innerHTML = hours[i];
+      headerRow.appendChild(td);
     }
+
+    tbl.appendChild(headerRow);
 
     var row = document.createElement('tr');
     var location = document.createElement('th');
     location.textContent = this.location;
     row.appendChild(location);
 
-    for(var i = 0; i < hours.legnth; i++) {
-        var numCookie = document.createElement('td');
-        numCookie.textContent = this.hourTotals[i];
-        row.appendChild(numCookie);
-        tbl.appendChild(row);
-
+    for(var i = 0; i < hours.length; i++) {
+      var numCookie = document.createElement('td');
+      numCookie.textContent = this.hourTotals[i];
+      row.appendChild(numCookie);
+      tbl.appendChild(row);
     }
-
   }
-
+document.body.appendChild(tbl);
 };
 
 var pikePlaceMarket = new CookieStand('Pike Place Market', 17, 88, 5.2);
@@ -60,18 +66,8 @@ var southCenter = new CookieStand("South Center Mall", 11, 38, 1.9);
 var bellevueSquare = new CookieStand("Bellevue Square Mall", 20, 48, 3.3);
 var alki = new CookieStand("Alki Beach", 3, 24, 2.6);
 
-var tbl = document.createElement('table');
-var headerRow = document.createElement('thead');
-  for (i = 0; i < hours.length; i++) {
-    var td =document.createElement('td');
-    td.innerHTML = hours[i];
-    headerRow.appendChild(td);
-  };
-
-tbl.appendChild(headerRow);
 pikePlaceMarket.makeList();
 seaTac.makeList();
 southCenter.makeList();
 bellevueSquare.makeList();
 alki.makeList();
-document.body.appendChild(tbl);
