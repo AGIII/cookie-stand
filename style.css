@@ -1,13 +1,17 @@
-* {
+html {
   text-align: center;
+  background-image: url('file://PATH-TO//Users/GeorgeAscherl/201d1/cookie-stand/darkwood.jpg');
+  float: left;
   background-color: gray;
 }
+
 
 header {
   font-size: 64px;
   font-family: tangerine;
   color: purple;
   font-family: 'Slabo 27px', serif;
+
 }
 
 img {
@@ -15,17 +19,23 @@ img {
 }
 
 h1 {
-  font-family:;
+  font-family: Verdana;
   color: purple;
+}
+
+p {
+  font-family: Arial;
+  color: green;
 }
 
 h2 {
-  font-family:;
+  font-family: Times;
   color: purple;
+
 }
 
 h3 {
-  font-family:;
+  font-family: Verdana;
   color: purple;
 }
 
@@ -69,4 +79,27 @@ td {
 
 #four {
  background-color: #2E882E;
+}
+
+form {
+background-color: #AA6C39;
+width:500px;
+height:180px;
+font-family: Tahoma, sans-serif;
+font-size: 14px;
+font-style: italic;
+line-height: 25px;
+font-weight: bold;
+color: #2E882E;
+text-decoration: none;
+border-radius: 40px;
+box-shadow: 0px 0px 8px 8px #226666;
+padding: 50px;
+margin: auto;
+
+
+}
+
+video {
+ box-shadow: 0px 0px 8px #AA3939;
 }
