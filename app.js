@@ -2,31 +2,6 @@ var hours = ['10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm']
 var tbl = document.createElement('table');
 var form = document.getElementById('location-form');
 
-
-// var handleForm = function(event) {
-//   event.preventDefault();
-//   console.log(event);
-//   console.log(event.target.mincust.value);
-
-
-
-// var loc = event.target.locationame.value;
-// var min = event.target.mincust.value;
-// var max = event.target.maxcust.value;
-// var avg = event.target.avgcust.value;
-
-
-// //this is where I am trying to append the new row for the form
-// var newshoprow = document.createElement('tr');
-
-
-
-//   //import the value and set to a variable
-//   //create a new cookiestand object with those variables
-//   //append a row representing that cooking stand onto the end of the table
-// }
-
-
 function CookieStand (location, minHourCust, maxHourCust, aveCookieCust) {
   this.location = location;
   this.minHourCust = minHourCust;
@@ -91,13 +66,36 @@ var southCenter = new CookieStand("South Center Mall", 11, 38, 1.9);
 var bellevueSquare = new CookieStand("Bellevue Square Mall", 20, 48, 3.3);
 var alki = new CookieStand("Alki Beach", 3, 24, 2.6);
 
-// //this is the variable I have created for the new shop from the form
-// var newShop = new CookieStand(loc, min, max, avgcust);
-
 pikePlaceMarket.makeList();
 seaTac.makeList();
 southCenter.makeList();
 bellevueSquare.makeList();
 alki.makeList();
 
-form.addEventListener("submit", handleForm)
+
+
+var handleForm = function(event) {
+  event.preventDefault();
+
+   if (!event.target.locationname.value || !event.target.mincust.value) {
+    return alert('Fields cannot be empty!');
+   }
+
+var loc = event.target.locationname.value;
+var min = parseInt(event.target.mincust.value);
+var max = parseInt(event.target.maxcust.value);
+var avg = parseInt(event.target.avgcust.value);
+
+event.target.locationname.value = null;
+event.target.mincust.value = null;
+event.target.maxcust.value = null;
+event.target.avgcust.value = null;
+
+var newShop = new CookieStand(loc, min, max, avg);
+
+newShop.makeList();
+
+};
+
+
+form.addEventListener("submit", handleForm);
