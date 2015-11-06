@@ -77,7 +77,7 @@ alki.makeList();
 var handleForm = function(event) {
   event.preventDefault();
 
-   if (!event.target.locationname.value || !event.target.mincust.value) {
+   if (!event.target.locationname.value || !event.target.mincust.value || !event.target.maxcust.value || !event.target.avgcust.value) {
     return alert('Fields cannot be empty!');
    }
 
@@ -91,9 +91,13 @@ event.target.mincust.value = null;
 event.target.maxcust.value = null;
 event.target.avgcust.value = null;
 
-var newShop = new CookieStand(loc, min, max, avg);
+
 
 newShop.makeList();
+
+var newShop = new CookieStand(loc, min, max, avg);
+
+
 
 };
 

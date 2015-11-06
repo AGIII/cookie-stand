@@ -11,8 +11,19 @@ header {
   font-family: tangerine;
   color: purple;
   font-family: 'Slabo 27px', serif;
+  background-color: #226666;
 
 }
+
+p {
+  color:green;
+}
+
+#history {
+  background-color: #AA3939;
+  color: green;
+}
+
 
 img {
   width: 400px;
@@ -23,10 +34,11 @@ h1 {
   color: purple;
 }
 
-p {
-  font-family: Arial;
-  color: green;
+a {
+  color:green;
+  text-decoration: none;
 }
+
 
 h2 {
   font-family: Times;
