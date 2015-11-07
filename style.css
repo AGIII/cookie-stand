@@ -1,120 +1,141 @@
-html {
-  text-align: center;
+/*
+#AA3939
+#AA6C39
+#226666
+#2E882E
+*/
+
+body {
   background-image: url('file://PATH-TO//Users/GeorgeAscherl/201d1/cookie-stand/images/darkwood.jpg');
-  float: left;
-  background-color: gray;
-}
-
-
-header {
-  font-size: 64px;
-  font-family: tangerine;
-  color: purple;
-  font-family: 'Slabo 27px', serif;
-  background-color: #226666;
-
-}
-
-p {
-  color:green;
-}
-
-#history {
-  background-color: #AA3939;
-  color: green;
-}
-
-
-img {
-  width: 400px;
 }
 
 h1 {
-  font-family: Verdana;
-  color: purple;
+  color: #AA3939;
+  font-family: Arial;
+}
+
+h2 {
+  color: #AA3939;
+  font-family: Arial;
+}
+
+#padding {
+  padding-top: 10%;
+  padding-left: 5%;
+}
+
+#paddingg {
+  padding-top: 15%;
+  padding-bottom: 3%;
+}
+
+#foursalmon {
+  clear: left;
+  float: right;
+  height: 200px;
+}
+
+.container {
+  width: 80%;
+  margin: 0px auto;
+  color: #226666;
+  background-color: black;
+  font-family: Helvetica;
+}
+
+#familyone {
+
+  height: 200px;
+  clear: left;
+  float: right;
+}
+
+#shirt {
+  height: 100px;
+  clear: top;
+  float: right;
 }
 
 a {
-  color:green;
+  color: #226666;
   text-decoration: none;
 }
 
-
-h2 {
-  font-family: Times;
-  color: purple;
-
+header {
+  top: 0%;
+  left: 0%;
+  position: fixed;
+  font-family: 'Slabo 27px', serif;
+  background-color: #226666;
+  width: 100%;
+  padding: 10px;
+  height: 115px;
+  text-align: left;
+  color: #AA6C39;
+  z-index: 10;
 }
 
-h3 {
-  font-family: Verdana;
-  color: purple;
+#name {
+  color: #AA6C39;
+  font-family: 'Slabo 27px', serif;
+}
+
+#slogan {
+  color: #AA6C39;
+  font-family: 'Slabo 27px', serif;
+}
+
+#salmon {
+  position: fixed;
+  top: 3.5%;
+  right: 1%;
+  width: 250px;
 }
 
 table {
+
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
-  width: 100%;
-  padding: 25px;
-  background-color: green;
+  width: 60%;
+  padding: 15px;
+  background-color: #226666;
+  width: 80%;
+  color: #AA6C39;
+  box-shadow: 0px 0px 5px 5px #AA3939;
 }
 
-.data {
-  font-family: Helvetica;
-  color: green;
-}
-
-.text {
-  font-family: Georgia;
-  color:blue;
+th {
+  width: 15px;
+  color: #AA6C39;
 }
 
 tr {
-  height: 15px;
+  width: 20px;
+  color: #AA6C39;
 }
 
 td {
-  width: 15px;
-  color: white;
-
-}
-
-#one {
- background-color: #AA3939;
-}
-
-#two {
- background-color: #AA6C39;
-}
-
-#three {
- background-color: #226666;
-}
-
-#four {
- background-color: #2E882E;
+  height: 10px;
+  width: 10px;
+  color: #AA6C39;
 }
 
 form {
-background-color: #AA6C39;
-width:500px;
-height:180px;
+  margin-left: auto;
+  margin-right: auto;
+background-color: #226666;
+width:250px;
+height:270px;
 font-family: Tahoma, sans-serif;
 font-size: 14px;
 font-style: italic;
 line-height: 25px;
 font-weight: bold;
-color: #2E882E;
+color: #AA6C39;
 text-decoration: none;
 border-radius: 40px;
-box-shadow: 0px 0px 8px 8px #226666;
-padding: 50px;
-margin: auto;
-
-
-}
-
-video {
- box-shadow: 0px 0px 8px #AA3939;
+box-shadow: 0px 0px 5px 5px #AA3939;
+padding: 20px;
+/*margin: auto;*/
 }

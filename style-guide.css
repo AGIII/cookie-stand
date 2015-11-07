@@ -1,6 +1,6 @@
-* {
-  text-align: center;
+body {
   background-color: gray;
+  text-align: center;
 }
 
 header {
@@ -10,7 +10,7 @@ header {
   font-family: 'Slabo 27px', serif;
 }
 
-img {
+#salmon {
   width: 400px;
 }
 
@@ -36,6 +36,7 @@ table {
 }
 
 .data {
+  text-align: center;
   font-family: Helvetica;
   color: green;
 }

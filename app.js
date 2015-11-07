@@ -92,11 +92,9 @@ event.target.maxcust.value = null;
 event.target.avgcust.value = null;
 
 
-
-newShop.makeList();
-
 var newShop = new CookieStand(loc, min, max, avg);
 
+newShop.makeList();
 
 
 };
