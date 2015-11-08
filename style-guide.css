@@ -1,12 +1,17 @@
+ul span {
+ margin-left: -35px;
+}
+
 body {
   background-color: gray;
   text-align: center;
+  background: url('images/darkwood.jpg');
 }
 
 header {
   font-size: 64px;
   font-family: tangerine;
-  color: purple;
+  color: #AA3939;
   font-family: 'Slabo 27px', serif;
 }
 
@@ -16,17 +21,27 @@ header {
 
 h1 {
   font-family: Verdana;
-  color: purple;
+  color: #AA3939;
 }
 
 h2 {
   font-family: Verdana;
-  color: purple;
+  color: #AA3939;
 }
 
 h3 {
   font-family: Verdana;
-  color: purple;
+  color: #AA3939;
+}
+
+h4 {
+  font-family: Verdana;
+  color: #AA3939;
+}
+
+h5 {
+  font-family: Verdana;
+  color: #AA3939;
 }
 
 table {
@@ -43,7 +58,7 @@ table {
 
 .text {
   font-family: Georgia;
-  color:blue;
+  color:#AA6C39;
 }
 
 tr {
